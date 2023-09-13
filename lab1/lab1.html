@@ -1,72 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Lab 1 page</title>
+    <title>test Lab 1 page</title>
     <link rel="stylesheet" type="text/css" href="lab1_static.css">
 </head>
 
 <body>
 
-<table class="Page_table">
+    <div class="flex_parent parent_div">
 
-    <tr>
-        <td colspan="4">
-            <div id="div1" class="layout_div">
-                <table class="Sub_table">
-                    <tr>
-                        <td><p class="content">1</p></td> <td><h4>x</h4></td>
-                    </tr>
-                </table>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div id="div2" class="layout_div">
+        <header class="header">
 
-                <p class="content">2</p>
-
-            </div>
-        </td>
-        <td colspan="2" rowspan="2">
-            <div id="div3" class="layout_div">
-                
-                <p class="content">3</p>
-            
-            </div>
-        </td>
-        <td  rowspan="3">
-            <div id="div4" class="layout_div">
-            
-                <p class="content">4</p>
+            Header
         
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div id="div5" class="layout_div">
-            
-                <p class="content">5</p>
-        
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3">
-            <div id="div6" class="layout_div">
-            
-                <table class="Sub_table">
-                    <tr>
-                        <td><h4>x</h4></td> <td><p class="content">6</p></td>
-                    </tr>
-                </table>
-            
-            </div>
-        </td>
-    </tr>
+        </header>
 
-</table>
+        <main class="content_container flex_parent">
+
+            <section class="section_left">
+                <aside class="aside aside_content aside-1">Aside 1</aside>
+                <aside class="aside aside_content aside-2">Aside 2</aside>
+            </section>
+
+            <article class="content">
+                <p>Main</p>  
+            </article>
+
+            
+            <footer class="footer">Footer</footer>
+
+        </main>
+
+        <aside class="aside aside-3 menu">Aside 3 menu</aside>
+    </div>
 
 </body>
 </html>

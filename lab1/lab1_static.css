@@ -1,78 +1,68 @@
-table, th, td{
-    border: 1px solid;
-    vertical-align: middle;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-.Page_table {
+.parent_div {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.flex_parent {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.aside{
+    background-color:aqua;
+}
+
+.aside_content {
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 
-.Sub_table {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.content_container{
+    width: 75%;
+    height: 75%;
+    background-color: rgb(61, 44, 23);
+    order: 2;
+}
+
+.menu{
+    background-color: rgb(119, 29, 107);
+    order: 2;
+    width: 25%;
+    height: 75%;
+}
+
+.header{
+    background-color: bisque;
     width: 100%;
-    height: 100%;
+    height: 25%;
 }
 
-h4 {
-    /* position: absolute; */
-    text-align: center;
-    top: 0;
-    left: 0;
-}
-
-p {
-    /* text-align: left;
-    vertical-align: auto; */
+.article{
     background-color: aquamarine;
+    width: 67%;
+    height: 67%;
 }
 
-.content {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.section_left{
+    background-color:aliceblue;
+    width: 33%;
+    height: 67%;
+
 }
 
-.layout_div {
-    display: inline-block;
-    background-color: lightblue;
-    position: relative;
+.content{
+    background-color: tomato;
+    width: 67%;
+    height: 67%;
+}
+
+.footer{
+    background-color: brown;
     width: 100%;
-    height: 100%;
-}
-
-#div1 {
-    text-align: left;
-}
-
-#div2 {
-    text-align: left;
-}
-
-#div3 {
-    text-align: center;
-}
-
-#div4 {
-    text-align: right;
-}
-
-#div5 {
-    text-align: left;
-}
-
-#div6 {
-    text-align: right;
+    height: 33%;
 }
