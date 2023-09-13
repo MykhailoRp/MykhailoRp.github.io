@@ -1,3 +1,39 @@
+:root {
+    --bar-height: 90px;
+    --content-height: calc(100% - (var(--bar-height)));
+
+    --menu-width: 180px;
+    --content-width: calc(100% - (var(--menu-width)));
+}
+
+
+.fade {
+    background-color: #DB1F48;
+    color: #fff;
+    transition: background-color 1s;
+}
+
+.fade:hover {
+    background-color: #004369;
+}
+
+p {
+    margin: 10px;
+}
+
+h4{
+    margin: 10px;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    vertical-align: bottom;
+}
+
+#y {
+    align-self: flex-start;
+    text-align: right;
+}
+
 .parent_div {
     position: absolute;
     top: 0;
@@ -9,11 +45,26 @@
 .flex_parent {
     display: flex;  
     flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center; 
+}
+
+.flex_aling {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.flex_center {
+    display: flex;  
+    align-items:center;
+}
+
+.content_container{
+    width: var(--content-width);
+    height: var(--content-height);
+    order: 2;
 }
 
 .aside{
+    justify-content: left;
     background-color:aqua;
 }
 
@@ -22,47 +73,35 @@
     height: 50%;
 }
 
-.content_container{
-    width: 75%;
-    height: 75%;
-    background-color: rgb(61, 44, 23);
-    order: 2;
-}
-
-.menu{
+.aside_menu{
+    justify-content: right;
     background-color: rgb(119, 29, 107);
     order: 2;
-    width: 25%;
-    height: 75%;
+    width: var(--menu-width);
+    height: var(--content-height);
 }
 
 .header{
     background-color: bisque;
     width: 100%;
-    height: 25%;
-}
-
-.article{
-    background-color: aquamarine;
-    width: 67%;
-    height: 67%;
+    height: var(--bar-height);
 }
 
 .section_left{
-    background-color:aliceblue;
     width: 33%;
-    height: 67%;
-
+    height: var(--content-height);
 }
 
-.content{
+.page_content{
+    justify-content: center;
     background-color: tomato;
     width: 67%;
-    height: 67%;
+    height: var(--content-height);
 }
 
 .footer{
+    /* justify-content: right; */
     background-color: brown;
     width: 100%;
-    height: 33%;
+    height: var(--bar-height);
 }
