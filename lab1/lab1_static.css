@@ -1,8 +1,10 @@
 :root {
-    --bar-height: 90px;
+    /* --bar-height: 90px; */
+    --bar-height: 25%;
     --content-height: calc(100% - (var(--bar-height)));
 
-    --menu-width: 180px;
+    /* --menu-width: 180px; */
+    --menu-width: 25%;
     --content-width: calc(100% - (var(--menu-width)));
 
     --menu-option-padding-top: 20px;
@@ -68,6 +70,14 @@ h5 {
     bottom: 0;
     left: 0;
     right: 0;
+
+    min-width: 1000px;
+    min-height: 800px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .flex_parent {
