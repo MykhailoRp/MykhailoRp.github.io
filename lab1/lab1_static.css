@@ -22,7 +22,7 @@
 
 .menu_option  {
     top: 5px;
-    background-color: red;
+    background-color: rgb(119, 29, 107);
     box-shadow: none;
     color: white;
     padding: var(--menu-option-padding-top) var(--menu-option-padding-left);
@@ -30,12 +30,13 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: right;
+    border-bottom: solid rgb(102, 24, 92);
   }
   
   .menu_option:hover {
     top: 0px;
-    background-color: #ce0606;
-    box-shadow: 0 5px 0 darkred;
+    background-color: rgb(102, 24, 92);
+    box-shadow: 0 5px 0 rgb(70, 17, 63);
   }
   
   .menu_option:active {
@@ -76,8 +77,9 @@ h5 {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 500px;
 }
 
 .flex_parent {
