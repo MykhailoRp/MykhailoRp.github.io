@@ -9,14 +9,14 @@
 
     <div class="parent_div">
 
-        <table>
+        <table class="page_table">
 
             <tr>
-                <td colspan="4">
+                <td colspan="4" class="header_cell">
 
                     <!-- header -->
 
-                    <header class="header grid_center grid_aling">
+                    <header class="cell_content header grid_center grid_aling">
 
                         <p id="header_text">By Mykhailo Razbeiko</p>
             
@@ -29,11 +29,11 @@
 
             <tr>
 
-                <td rowspan="2">
+                <td rowspan="2" class="aside_cell">
 
                     <!-- side content -->
 
-                    <section class="section_left">
+                    <section class="cell_content section_left">
                         <aside class="fade aside aside_content aside-1 grid_center">
                             
                             <h5>An example with UL tag:</h5>
@@ -88,7 +88,7 @@
 
                 </td>
 
-                <td rowspan="2" colspan="2">
+                <td rowspan="2" colspan="2" class="cell_content content_cell">
 
                     <!-- page content -->
 
@@ -128,15 +128,33 @@
 
                 </td>
 
-                <td rowspan="3">
+                <td rowspan="3" class="menu_cell">
 
                     <!-- menu -->
 
-                    <aside class="aside aside-3 aside_menu">
-                        <a class="menu_option" href="lab2.html">Main</a>
-                        <a class="menu_option" href="lab2 flex.html">Flex page</a>
-                        <a class="menu_option" href="lab2 grid.html">Grid page</a>
-                        <a class="menu_option" href="lab2 table.html">Table page</a>
+                    <aside class="cell_content aside aside-3 aside_menu">
+                        <table class="menu_table">
+                            <tr><td><a class="menu_option" href="lab2.html">
+                            <div class="menu_wraper_div">    
+                                <p>Main</p>
+                            </div>
+                            </a></td></tr>
+                            <tr><td><a class="menu_option" href="lab2 flex.html">
+                            <div class="menu_wraper_div">    
+                                <p>Flex page</p>
+                            </div>
+                            </a></td></tr>
+                            <tr><td><a class="menu_option" href="lab2 grid.html">
+                            <div class="menu_wraper_div">    
+                                <p>Grid page</p>
+                            </div>
+                            </a></td></tr>
+                            <tr><td><a class="menu_option" href="lab2 table.html">
+                            <div class="menu_wraper_div">    
+                                <p>Table page</p>
+                            </div>
+                            </a></td></tr>
+                        </table>
                     </aside>
 
                 </td>
@@ -147,12 +165,11 @@
 
             <tr>
 
-                <td colspan="3">
+                <td colspan="3" class="footer_cell">
 
                     <!-- footer -->
 
-                    
-                    <footer class="footer grid_center grid_aling">
+                    <footer class="cell_content footer grid_center grid_aling">
                     
                         <h4 id="y">Hello world</h4>
                         
