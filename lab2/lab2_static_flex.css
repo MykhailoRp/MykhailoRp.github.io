@@ -77,8 +77,6 @@ h5 {
 }
 
 img {
-    /* max-width: 100%;
-    max-height: 100%; */
     width: 500px;
 }
 
@@ -98,8 +96,8 @@ img {
 }
 
 .content_container{
-    width: var(--content-width);
-    height: var(--content-height);
+    width: 75%;
+    height: 75%;
     order: 2;
 }
  
@@ -120,8 +118,8 @@ img {
 .aside_menu{
     background-color: rgb(119, 29, 107);
     order: 2;
-    width: var(--menu-width);
-    height: var(--content-height);
+    width: 25%;
+    height: 75%;
 
     display: flex;
     flex-direction: column;
@@ -132,12 +130,12 @@ img {
 .header{
     background-color: bisque;
     width: 100%;
-    height: var(--bar-height);
+    height: 25%;
 }
 
 .section_left{
     width: 33%;
-    height: var(--content-height);
+    height: 67%;
 }
 
 .page_content{
@@ -145,11 +143,11 @@ img {
     flex-direction: column;
     background-color: tomato;
     width: 67%;
-    height: var(--content-height);
+    height: 67%;
 }
 
 .footer{
     background-color: brown;
     width: 100%;
-    height: var(--bar-height);
+    height: 33%;
 }
