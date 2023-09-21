@@ -57,7 +57,6 @@ ul, ol {
     background-color: rgb(119, 29, 107);
     box-shadow: none;
     color: white;
-    position: relative;
 }
   
 .menu_wraper_div:hover {
@@ -83,8 +82,17 @@ ul, ol {
     transform: translate(-50%, -50%);
 }
 
+.menu_cell{
+    background-color: rgb(119, 29, 107);
+    width: 25%;
+    height: 75%;
+    
+}
+
 p {
     margin: 10px;
+
+    display: inline-block;
 }
 
 h4{
@@ -93,11 +101,22 @@ h4{
     width: 150px;
     height: 30px;
     vertical-align: bottom;
+
+    display: inline-block;
 }
 
 h5 {
     font-size: 1rem;
+    margin: 10px;
     margin-top: 0px;
+    padding-top: 10px;
+}
+
+#x {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
 }
 
 #y {
@@ -126,13 +145,6 @@ h5 {
     font-size: 0.85rem;
 }
 
-.menu_cell{
-    background-color: rgb(119, 29, 107);
-    width: 25%;
-    height: 75%;
-    
-}
-
 .header_cell{
     background-color: bisque;
     width: 100%;
@@ -151,8 +163,38 @@ h5 {
     width: 50%;
 }
 
+.page_content{
+    height: auto;
+    text-align: center;
+}
+
 .footer_cell{
     background-color: brown;
     width: 75%;
     height: 25%;
+    
+    position: relative;
+}
+
+.footer {
+    position: relative;
+}
+
+#footer_text{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+}
+
+.header {
+    position: relative;
+}
+
+
+#header_text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
 }
